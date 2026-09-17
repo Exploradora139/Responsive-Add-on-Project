@@ -1,23 +1,22 @@
 body {
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #272044;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("images/laineywilson_whirlinddeluxe.jpg");
+    url("../images/laineywilson_whirlinddeluxe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 300px 0;
 }
 
 header h1 {
@@ -30,15 +29,15 @@ header h1 {
 header h2 {
   font-weight: 400;
   font-size: 40px;
-  margin: 0;
   line-height: 1.5;
+  margin: 0;
 }
 
 header h3 {
   font-weight: 900;
   font-size: 24px;
-  letter-spacing: 5px;
   line-height: 1.5;
+  letter-spacing: 5px;
   margin: 0;
 }
 
@@ -47,26 +46,30 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  text-decoration: none;
-  color: white;
+  color: #272044;
   padding: 16px 32px;
+  margin-top: 32px;
   display: inline-block;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #e6b422;
+  background: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
   header h1 {
     font-size: 48px;
   }
 
   header h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   header h3 {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
