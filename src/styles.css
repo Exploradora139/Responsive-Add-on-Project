@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -34,9 +34,24 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.spotify-embeds {
+  margin: 30px 0;
+  display: grid;
+  grid-gap: 10px;
+}
+
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -57,7 +72,7 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px;
-  background-color: #462cb3;
+  background-color: #7a552a;
   text-decoration: none;
 }
 
@@ -65,10 +80,19 @@ section {
   max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+  background-size: fit;
 }
 
 section.secondary {
-  background: #f8f8f8;
+  background-image:
+    linear-gradient(rgba(241, 236, 236, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/can't_sit_still.jpg");
+}
+
+section.tertiary {
+  background-image:
+    linear-gradient(rgba(241, 236, 236, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/lainey-wilson-white-stallion-ranch-az.jpg");
 }
 
 header {
@@ -171,7 +195,7 @@ footer {
   color: white;
   background-image:
     linear-gradient(rgba(43, 43, 43, 0.9), rgba(79, 79, 81, 0.9)),
-    url("../images/wildflowers\ and\ wild\ horses.jpg");
+    url("../images/wildflowers and wild horses.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,5 +253,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
